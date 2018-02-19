@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 /* LESS Document */
 body {
   padding: 0px;
@@ -139,7 +140,7 @@ a ul {
 .indicator-container .label {
   color: #00b5ac;
   position: absolute;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Roboto', sans-serif;
   top: 2px;
 }
 .indicator-container .label:nth-child(1) {
@@ -165,7 +166,7 @@ a ul {
   text-decoration: none !important;
 }
 .text-container h2 {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 60px;
   text-shadow: 3px 3px 0px #969696;
 }
