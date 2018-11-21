@@ -103,6 +103,14 @@ $(document).ready(function () {
 		num = 4;
 		downArrow();
 	});
+	$(".circle6").click(function () {
+		num = 5;
+		downArrow();
+	});
+	$(".circle7").click(function () {
+		num = 6;
+		downArrow();
+	});
 //-----------------------------------------------------
 	
 //---------------KEYBOARD CHANGES--------------
