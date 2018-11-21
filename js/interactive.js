@@ -15,7 +15,7 @@ $(document).ready(function () {
 	H_0 = "Hello, I'm Peter Mankiewich";
 	H_1 = "Software and Web Development Intern";
 	H_2 = "Vice President of Marketing";
-	H_3 = "President of The Young Entrepreneurs Organization";
+	H_3 = "President, Young Entrepreneurs Organization";
 	H_4 = "Web and Business Development Intern";
 	H_5 = "Web Development Teaching Assistant";
 	H_6 = "Ithaca College Startup Idea Demo Day";
