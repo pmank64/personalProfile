@@ -212,3 +212,6 @@ a ul {
   transition: opacity 500ms;
   transition-timing-function: ease-in-out;
 }
+.learnMore {
+  color: red !important;
+}

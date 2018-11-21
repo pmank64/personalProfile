@@ -7,37 +7,47 @@ $(document).ready(function () {
     var header = $(".header-target");
 	var description = $(".description-target");
 	var image = $(".image-target");
+	var learnMore = ["","<br><a class='learnMore' href='http://petermankiewich.com/drms.html'><u>Learn More</u></a>","<br><a class='learnMore' href='http://petermankiewich.com/impact.html'><u>Learn More</u></a>","","","",""];
 
-	var H_0, H_1, H_2, H_3, H_4, H_5;
-	var D_0, D_1, D_2, D_3, D_4, D_5;
+	var H_0, H_1, H_2, H_3, H_4, H_5, H_6, H_7;
+	var D_0, D_1, D_2, D_3, D_4, D_5, D_6, D_7;
 	
 	H_0 = "Hello, I'm Peter Mankiewich";
-	H_1 = "Young Entrepreneurs Organization";
-	H_2 = "Web and Business Development Intern";
-	H_3 = "Web Development Teaching Assistant";
-	H_4 = "Ithaca College Startup Idea Demo Day";
-	H_5 = "Fiverr Seller";
+	H_1 = "Software and Web Development Intern";
+	H_2 = "Vice President of Marketing";
+	H_3 = "President of The Young Entrepreneurs Organization";
+	H_4 = "Web and Business Development Intern";
+	H_5 = "Web Development Teaching Assistant";
+	H_6 = "Ithaca College Startup Idea Demo Day";
+	H_7 = "Fiverr Seller";
+	
+	
 	
 	D_0 = "My name is Peter Mankiewich, and I enjoy combining Business and Computer Science to create projects that are effective and high tech. I love business and entrepreneurship, as well as web design and programming. I also enjoy designing graphics, videos and promotional materials using Adobe Creative Cloud. I study my passion at Ithaca College, and incorporate my studies into projects and learning outside of class.";
 	
-	D_1 = "Vice President of Marketing for the Young Entrepreneurs Organization, an on-campus club in which we mentor our club members to become successful and professional entrepreneurs. Responsibilities include managing social media accounts including LinkedIn and Facebook, and using Adobe applications to create imagery.";
+	D_1 = "Interned at Disability Reinsurance Management Services where I worked on an Agile Software Development Team and worked to redesign, rebuild, and test the Corporate Website.";
 	
-	D_2 = "Worked at Manor Trade Development Corporation in New York City, developing a lead generation and affiliate website designed to gain sales for the company. The internship involved working in an office environment and collaborating with a team to develop business models and buyer funnels for each website. We used the WordPress platform to develop the websites.";
+	D_2 = "Works As the Vice President of Marketing for IC Impact, a student run sustainability based club at Ithaca College. As a club, we focus on bringing guest speakers to campus, and jumpstarting events and workshops that contribute to a more sustainable campus and community.";
 	
-	D_3 = "Working as a teaching assistant for Introduction to Website Development at Ithaca Collge.  Class time and lab hours are spent helping students with their web programming projects and assignments.";
+	D_3 = "President of the Young Entrepreneurs Organization, an on-campus club in which we mentor our club members to become successful and professional entrepreneurs. Responsibilities include planning and managing club meetings, networking with speakers and alumni, and planning events and off campus trips";
 	
-	D_4 = "Pitched an eBay application designed to streamline the process of selling products in bulk on eBay. I developed a slide deck, performed research on the target market, and pitched the idea in a four-minute presentation. I won a cash prize to further the business idea.";
+	D_4 = "Worked at Manor Trade Development Corporation in New York City, developing a lead generation and affiliate website designed to gain sales for the company. The internship involved working in an office environment and collaborating with a team to develop business models and buyer funnels for each website. We used the WordPress platform to develop the websites.";
 	
-	D_5 = "Worked as a seller on Fiverr.com for about two years selling eBay related services including SEO optimization and product descriptions. I also branched out and worked on video and graphics design projects. I used Adobe Premiere Pro, After Effects, Illustrator, and Photoshop to create client projects. I made over 400 sales while maintaining a 100% positive feedback, and gained level 2 seller status.";
+	D_5 = "Working as a teaching assistant for Introduction to Website Development at Ithaca Collge.  Class time and lab hours are spent helping students with their web programming projects and assignments.";
 	
+	D_6 = "Pitched an eBay application designed to streamline the process of selling products in bulk on eBay. I developed a slide deck, performed research on the target market, and pitched the idea in a four-minute presentation. I won a cash prize to further the business idea.";
+	
+	D_7 = "Worked as a seller on Fiverr.com for about two years selling eBay related services including SEO optimization and product descriptions. I also branched out and worked on video and graphics design projects. I used Adobe Premiere Pro, After Effects, Illustrator, and Photoshop to create client projects. I made over 400 sales while maintaining a 100% positive feedback, and gained level 2 seller status.";
+	
+
 	var right = $(".right-nav");
 	var left = $(".left-nav");
 	
-	var aheader = [H_0,H_1,H_2,H_3,H_4, H_5];
+	var aheader = [H_0,H_1,H_2,H_3,H_4, H_5, H_6, H_7];
 	
-	var adesc = [D_0,D_1,D_2,D_3,D_4, D_5];
+	var adesc = [D_0,D_1,D_2,D_3,D_4, D_5, D_6, D_7];
 	
-	var aimage = ["images/FrontPortrait_BW.png", "images/YEOLogo-01.png", "", "images/codeimage-edit.png", "images/Startup_demo_day.jpeg", "images/fiverr.png"];
+	var aimage = ["images/FrontPortrait_BW.png", "images/DRMS.jpg","images/impact.png", "images/YEOLogo-01.png", "images/nyc.jpg", "images/codeimage-edit.png", "images/Startup_demo_day.jpeg", "images/fiverr.png"];
 	
 	var aCircle = [];
 	
@@ -189,6 +199,7 @@ function fadeItOut(){
 		setTimeout(function(){
 			header.text(aheader[num]);
 			description.text(adesc[num]);
+			description.append(learnMore[num]);
 			image.attr("src", aimage[num]);
 			if (num===0){
 				$(".image-target").css("bottom", "0px");
@@ -236,6 +247,7 @@ function fadeItOut(){
 		setTimeout(function(){
 			header.text(aheader[num]);
 			description.text(adesc[num]);
+			description.append(learnMore[num]);
 			image.attr("src", aimage[num]);
 			if (num===0){
 				$(".image-target").css("bottom", "0px");
