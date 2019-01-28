@@ -57,7 +57,7 @@ $(document).ready(function () {
 	
 	var adesc = [D_0,D_1,D_2,D_3,D_4, D_5, D_6, D_7, D_8];
 	
-	var aimage = ["images/FrontPortrait_BW.png", "images/DRMS.jpg","images/freelance.png","images/impact.png", "images/YEOLogo-01.png", "images/nyc.jpg", "images/codeimage-edit.png", "images/Startup_demo_day.jpeg", "images/fiverr.png"];
+	var aimage = ["images/FrontPortrait_BW.png", "images/DRMS.jpg","images/freelance.jpg","images/impact.png", "images/YEOLogo-01.png", "images/nyc.jpg", "images/codeimage-edit.png", "images/Startup_demo_day.jpeg", "images/fiverr.png"];
 	
 	var aCircle = [];
 	
