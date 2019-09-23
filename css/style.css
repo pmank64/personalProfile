@@ -1,6 +1,16 @@
 /* LESS Document */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
 body {
   padding: 0px;
 }
@@ -11,9 +21,9 @@ a ul {
 #bottom,
 #left,
 #right {
-  background: #00b5ac;
+  background: #7090c5;
   position: fixed;
-  z-index: 1001;
+  z-index: 1002;
   -webkit-transition: background 500ms;
   transition: background 500ms;
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -44,23 +54,25 @@ a ul {
 }
 .contact-us-container {
   position: fixed;
-  z-index: 1002;
+  z-index: 1001;
   top: 0px;
   width: 100%;
-  height: 130px;
+  height: 50px;
 }
 .contact-button {
   -webkit-transition: all 500ms;
   transition: all 500ms;
   transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
   background: #f12711;
-  background: -webkit-linear-gradient(left, #f5af19, #f12711);
-  background: -o-linear-gradient(left, #f5af19, #f12711);
-  background: linear-gradient(to right, #f5af19, #f12711);
+  background: -webkit-linear-gradient(left, #333333, #333333);
+  background: -o-linear-gradient(left, #333333, #333333);
+  background: linear-gradient(to right, #333333, #333333);
+  z-index: 1001;
   width: auto;
   height: 50px;
   padding: 20px;
   cursor: pointer;
+  margin-top: 15px;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
@@ -95,7 +107,7 @@ a ul {
 }
 .social-container {
   width: 44px;
-  height: 100px;
+  height: 84px;
   position: absolute;
   top: 10%;
   left: 15px;
@@ -106,40 +118,44 @@ a ul {
 }
 .social-container div {
   width: 44px;
-  height: 50px;
+  height: 43px;
   padding: 7px;
   cursor: pointer;
-  color: #2F323A;
-  -webkit-transition: background-color 500ms;
-  transition: background-color 500ms;
+  color: #333333;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
   transition-timing-function: cubic-bezier(0.84, 0.26, 0.83, 0.67);
 }
 .social-container div:nth-child(1) {
-  background-color: #2ecc71;
+  background-color: #333333;
   margin-right: 5px;
+}
+.social-container div:nth-child(1) i {
+  color: white;
 }
 .social-container div:nth-child(1):hover {
   background-color: #2F323A;
 }
 .social-container div:nth-child(1) i:hover {
   color: #2ecc71;
-  -webkit-transition: color 500ms;
-  transition: color 500ms;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
   transition-timing-function: cubic-bezier(0.84, 0.26, 0.83, 0.67);
 }
 .social-container div:nth-child(2) {
-  background-color: #3498db;
+  background-color: #333333;
 }
 .social-container div:nth-child(2) i {
-  margin-top: 4px;
+  color: white;
+  margin-top: -2px;
 }
 .social-container div:nth-child(2):hover {
   background-color: #2F323A;
 }
 .social-container div:nth-child(2) i:hover {
   color: #3498db;
-  -webkit-transition: color 500ms;
-  transition: color 500ms;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
   transition-timing-function: cubic-bezier(0.84, 0.26, 0.83, 0.67);
 }
 .social-container div:nth-child(3) {
@@ -170,7 +186,7 @@ a ul {
 }
 .st0 {
   fill: none;
-  stroke: #00b5ac;
+  stroke: #7090c5;
   stroke-width: 14;
   stroke-miterlimit: 10;
   -webkit-transition: stroke 500ms;
@@ -186,13 +202,13 @@ a ul {
   list-style-type: none;
 }
 .indicator-container i {
-  color: #00b5ac;
+  color: #7090c5;
   -webkit-transition: color 500ms;
   transition: color 500ms;
   transition-timing-function: cubic-bezier(0.84, 0.26, 0.83, 0.67);
 }
 .indicator-container .label {
-  color: #00b5ac;
+  color: #7090c5;
   position: absolute;
   font-family: 'Roboto', sans-serif;
   top: 2px;
@@ -212,7 +228,7 @@ a ul {
 .text-container h2,
 .text-container p,
 .text-container a {
-  color: #00b5ac;
+  color: #7090c5;
   position: relative;
   -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
@@ -267,3 +283,4 @@ a ul {
 .learnMore {
   color: red !important;
 }
+/*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@
 @margin: 13px;
 
 
-@main-color: #00b5ac;
+@main-color: #7090c5;
 
 //HEADER FONT
 @h-font: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@ a ul{
 	background: @main-color;
 	position: fixed;
 	
-	z-index: 1001;
+	z-index: 1002;
 	
 	-webkit-transition: background 500ms;
    	transition: background 500ms;
@@ -74,27 +74,28 @@ a ul{
 
 .contact-us-container{
 	position: fixed;
-	z-index: 1002;
+	z-index: 1001;
 	top:0px;
 	width: 100%;
-	height: 130px;
+	height: 50px;
 //	background-color: red;
 }
 .contact-button{
 	-webkit-transition: all 500ms;
    	transition: all 500ms;
 	transition-timing-function: cubic-bezier(.17,.67,.83,.67);
-	
-	background: #f12711;
-	background: -webkit-linear-gradient(left, #f5af19, #f12711);
-	background: -o-linear-gradient(left, #f5af19, #f12711);
-	background: linear-gradient(to right, #f5af19, #f12711);
 
-	
+	background: #f12711;
+	background: -webkit-linear-gradient(left, #333333, #333333);
+	background: -o-linear-gradient(left, #333333, #333333);
+	background: linear-gradient(to right, #333333, #333333);
+
+	z-index: 1001;
 	width: auto;
 	height: 50px;
 	padding: 20px;
 	cursor: pointer;
+	margin-top:15px;
 	
 	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
@@ -136,7 +137,7 @@ a ul{
 .social-container{
 	
 	width:44px;
-	height:100px;
+	height:84px;
 	position: absolute;
 	top:10%;
 	left:15px;
@@ -148,43 +149,46 @@ a ul{
 	z-index: 1000;
 	
 	div{
-		
-		
+
 		width:44px;
-		height:50px;
+		height:43px;
 		padding: 7px;
 		
 		cursor:pointer;
-		color: #2F323A;
+		color: #333333;
 		
-		-webkit-transition: background-color 500ms;
-   		transition: background-color 500ms;
+		-webkit-transition: background-color 200ms;
+   		transition: background-color 200ms;
 		transition-timing-function: cubic-bezier(.84,.26,.83,.67);
 		
 		&:nth-child(1){
 			
-			background-color: #2ecc71;
+			background-color: #333333;
 			margin-right:5px;
-			
+
+			i{
+				color: white;
+			}
 			&:hover{
 				background-color: #2F323A;
 			}
 			
 			i:hover{
 			color: #2ecc71;
-			-webkit-transition: color 500ms;
-   			transition: color 500ms;
+			-webkit-transition: color 200ms;
+   			transition: color 200ms;
 			transition-timing-function: cubic-bezier(.84,.26,.83,.67);
 			
 			}
 		}
 		&:nth-child(2){
 		
-			background-color: #3498db;
+			background-color: #333333;
 			
 						
 			i{
-				margin-top:4px;
+				color: white;
+				margin-top:-2px;
 			}
 			
 			&:hover{
@@ -194,8 +198,8 @@ a ul{
 			
 			i:hover{
 			color: #3498db;
-			-webkit-transition: color 500ms;
-   			transition: color 500ms;
+			-webkit-transition: color 200ms;
+   			transition: color 200ms;
 			transition-timing-function: cubic-bezier(.84,.26,.83,.67);
 		}
 		
