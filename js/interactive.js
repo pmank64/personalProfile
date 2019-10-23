@@ -35,9 +35,9 @@ $(document).ready(function () {
 	
 	D_0 = "My name is Peter Mankiewich, and I enjoy combining Business and Computer Science to create projects that are effective and high tech. I love business and entrepreneurship, as well as web design and programming. I also enjoy designing graphics, videos and promotional materials using Adobe Creative Cloud. I study my passion at Ithaca College, and incorporate my studies into projects and learning outside of the classroom.";
 	
-	D_1 = "During the Summer of 2019, I had the opporunity to study and intern in London for 6 and a half weeks through CAPA. I took two classes including an urban studies course in which we examined various parts of the city both in the classroom and through field studies. Meeting other students and locals, learning to use public transportation, and creating the perfect cup of tea were just a few things I learned and experienced in London!";
+	D_1 = "During the Summer of 2019, I had the opportunity to study and intern in London for 6 and a half weeks through CAPA. I took two classes including an urban studies course in which we examined various parts of the city both in the classroom and through field studies. Meeting other students and locals, learning to use public transportation, and creating the perfect cup of tea were just a few things I learned and experienced in London!";
 	
-	D_2 = "Interned in East London, working with people with learning disabilites, and marketing online tools that help users develop their communication and organizational skills.";
+	D_2 = "I Interned in East London, working with people with learning disabilities and marketing online tools that help users develop their communication and organizational skills. I worked directly with a colleague with learning disabilities to learn how the Rix Wiki helps him better communicate. I commuted to the Rix Center in East London throughout the internship, attended a meeting in Oxfordshire, and learned about the product and how it is marketed to local municipalities and parents.";
 	
 	D_3 = "Interned at Disability Reinsurance Management Services as a member of an Agile Software Development Team. I also worked to redesign, rebuild and test the corporate website.";
 	
@@ -105,6 +105,18 @@ $(document).ready(function () {
 			$(".circle"+temp).css("cursor", "pointer");
 		}
 
+	$(".github-click").click(function () {
+		window.open('https://github.com/pmank64', '_blank');
+
+	});
+	$(".github-click").hover(function () {
+		$(".fa-github").css("color","#2ecc71");
+	});
+
+
+	$(".linkedin-click").click(function () {
+		window.open('https://www.linkedin.com/in/peter-mankiewich-5b0180130/', '_blank');
+	});
 	//LEFT ARROW CLICK
 	$(left).click(function () {
 		downArrow();
